@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style_menu.css">
+    <style>
+    ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #010e1e;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    }
+
+    li {
+    float:left;
+    font-size: larger;
+    height: 63px;
+    width: 20%;
+    }
+
+    li a {
+    display:block;
+    color:white;
+    text-align:center;
+    padding: 20px 15px;
+    text-decoration:none;
+    }
+
+    li a:hover {
+    background-color:#275e77;
+    }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @media only screen and (max-width: 300px) {
+        .Caption-text {font-size: 11px}
+        }
+        body {
+            background-color:azure;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#Home"><b>Home</b></a></li>
+        <li><a href="#menu"><b><u>Menu</u></b></a></li>
+        <li><img src="https://t3.ftcdn.net/jpg/04/40/43/36/240_F_440433633_buNv6CArZqvLFGT7xsxPXph6gYrmMa7n.jpg" style="height: 63px;padding-left: 100px;"></li>
+        <li><a href="#Aboutus"><b>About Us</b></a></li>
+        <li><a href="#Find us"><b>Find Us</b></a></li>
+      </ul>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="biryani.jpg" alt="appetizer" style="width:100%;height: 300px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="bq1.jpg" alt="barbeque" style="width:100%;height: 300px;">
+          </div>
+        
+        <div class="mySlides fade">
+          <img src="mc.jpg" alt="main course" style="width:100%;height: 300px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="dessert1.jpg" alt="dessert" style="width:100%;height: 300px;">
+          </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+        
+        <br>
+        <h1 class="menu_head">Our Menu</h1>
+        
+        <div>
+          <img src="starter1.jpg" class="food_image">
+          <p style="border-bottom: 1.5px solid grey;margin-left:410px;font-size: 30px;">Starters</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Tandoori Chicken</p>
+          <p style="float: left;padding-left: 530px;padding-right: 50px; font-size: 15px;color:grey">359/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Tandoori Shrimp</p>
+          <p style="float: left;padding-left: 538px;padding-right: 50px; font-size: 15px;color:grey">459/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Seekh Kabab</p>
+          <p style="float: left;padding-left: 563px;padding-right:50px;font-size: 15px;color:grey">499/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Paneer Tikka</p>
+          <p style="float: left;padding-left: 565px;padding-right:50px;font-size: 15px;color:grey">349/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Tandoori Mix Grill</p>
+          <p style="float: left;padding-left: 533px;padding-right:50px;font-size: 15px;color:grey">899/-</p>
+          
+        </div>
+
+        <div style="margin-top: 500px;">
+          <img src="mc1.jpg" class="food_image">
+          <p style="border-bottom: 1.5px solid grey;margin-left:410px;font-size: 30px;">Main Course</p>
+          
+          <p style="float:left;margin-left:35px; font-size:15px;color: grey;">Chicken Tikka Masala</p>
+          <p style="float: left;padding-left: 515px;padding-right: 50px; font-size: 15px;color:grey">539/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Lamb Curry</p>
+          <p style="float: left;padding-left: 578px;padding-right: 50px; font-size: 15px;color:grey">789/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Shrimp Garlic</p>
+          <p style="float: left;padding-left: 565px;padding-right: 50px; font-size: 15px;color:grey">669/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Lamb Biryani</p>
+          <p style="float: left;padding-left: 570px;padding-right: 50px; font-size: 15px;color:grey">659/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Paneer Butter Masala</p>
+          <p style="float: left;padding-left: 515px;padding-right: 50px; font-size: 15px;color:grey">629/-</p>
+          
+        </div>
+
+        <div style="margin-top: 500px;">
+          <img src="dessert3.jpg" class="food_image">
+          <p style="border-bottom: 1.5px solid grey;margin-left:410px;font-size: 30px;">Dessert</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Gulab Jamun</p>
+          <p style="float: left;padding-left: 576px;padding-right: 80px; font-size: 15px;color:grey">151/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Kulfi</p>
+          <p style="float: left;padding-left: 633px;padding-right: 50px; font-size: 15px;color:grey">121/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Mango Pudding</p>
+          <p style="float: left;padding-left: 555px;padding-right: 50px; font-size: 15px;color:grey">189/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Gajar Halwa</p>
+          <p style="float: left;padding-left: 583px;padding-right: 50px; font-size: 15px;color:grey">221/-</p>
+          
+        </div>
+
+        <div style="margin-top: 500px;">
+          <img src="Beverages.jpg" class="food_image">
+          <p style="border-bottom: 1.5px solid grey;margin-left:410px;font-size: 30px;">Beverages</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Mango Lassi</p>
+          <p style="float: left;padding-left: 580px;padding-right: 90px; font-size: 15px;color:grey">121/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Tea</p>
+          <p style="float: left;padding-left: 645px;padding-right: 50px; font-size: 15px;color:grey">89/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Soft Drinks</p>
+          <p style="float: left;padding-left: 590px;padding-right: 50px; font-size: 15px;color:grey">131/-</p>
+          
+          <p style="float:left;margin-left:35px;font-size:15px;color: grey;">Bottles Water</p>
+          <p style="float: left;padding-left: 578px;padding-right: 50px; font-size: 15px;color:grey">51/-</p>
+          
+        </div>
+
+        </body>
+        </html> 
+        
+</body>
+</html>
